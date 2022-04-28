@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Matematica --> mat	
+	inclua biblioteca Matematica --> mat
 	funcao inicio()
 	{
 	//	Variaveis Exercicio 2 --------------------
@@ -33,7 +33,6 @@ programa
 
 		
 	//Variaveis Exercicio 3 (ok) --------------------
-
 	inteiro Horas, Minutos, Segundos
 
 	escreva("Quantos segundos tem o evento: ")
@@ -47,8 +46,6 @@ programa
 	
 
 	//Variaveis Exercicio 4 (ok) --------------------
-
-	
 	real A, B, C, R, S
 
 	escreva("Valor de A: ")
@@ -60,23 +57,25 @@ programa
  	escreva("Valor de C: ")
 	leia(C)
 
-	R = (mat.potencia(A, 2.0) + mat.potencia(B, 2.0))
-	S = (mat.potencia(B, 2.0) + mat.potencia(C, 2.0))
+	R = mat.potencia(A+B, 2.0)
+	S = mat.potencia(B+C, 2.0)
 	
 	escreva ("O total é: ", (R+S)/2)
 
-
-	
 	escreva("\n\n")
-	}
+
+
+	//Variaveis Exercicio 7 (ok) --------------------
 	
+	}
+
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1036; 
+ * @POSICAO-CURSOR = 1629; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
