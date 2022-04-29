@@ -1,0 +1,48 @@
+programa {
+
+/* OPERADORES RELACIONAIS ------
+ *  
+ *  == igualdade
+ *  < menor que
+ *  > maior que
+ *  <= menor igual
+ *  >= maior igual
+ *  != diferente
+ *  se (var) { }
+ *  senao {var}
+ *  senao se (var) { }
+
+
+
+*/
+
+
+		funcao inicio() {
+			inteiro x = 32
+
+		leia (x)
+
+		se(x==32) {
+			escreva("isso ai meu bom!")
+			
+		} senao se (x<32) {
+			escreva("Ta menor em!")
+		} senao {
+			escreva ("Deu ruim")
+		}
+			
+		escreva("oi")
+	}
+}
+
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 406; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
