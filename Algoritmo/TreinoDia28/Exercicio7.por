@@ -19,6 +19,17 @@ programa
 		escreva("Valor de D: ")
 		leia(D)
 
+		escreva("Valor de E: ")
+		leia(E)
+
+		escreva("Valor de F: ")
+		leia(F)
+
+		X = (((C*E)-(B*F))/((A*E)-(B*D)))
+		Y = (((A*F)-(C*D))/((A*E)-(B*D)))
+
+		escreva("\nO valor de X é: ", X)
+		escreva("\nO valor de Y é: ", Y)
 	
 	}
 }
@@ -27,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 257; 
+ * @POSICAO-CURSOR = 473; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
