@@ -19,29 +19,38 @@ public class Exercicio2Gen {
 		System.out.println("Digite o terceiro número: ");
 		N3 = ler.nextInt();
 
-		if (N1 > N2 && N2 > N3) {
+		if (N1 > N2 && N1 > N3) {
 			Primeiro = N1;
-			Segundo = N2;
-			Terceiro = N3;
-			System.out.println("\nN1 é o Primeiro.\nN2 é o Segundo.\nN3 é o Terceiro");
+			if (N2 > N3) {
+				Segundo = N2;
+				Terceiro = N3;
+			} else {
+				Segundo = N3;
+				Terceiro = N2;
+			}
 		}
 		
-		if (N2 > N1 && N2 > N3 && N1 > N3) {
+		if (N2 > N1 && N2 > N3) {
 			Primeiro = N2;
-			Segundo = N1;
-			Terceiro = N3;
-			System.out.println("\nN2 é o Primeiro \\nN1 é o Segundo\\nN3 é o Terceiro");
+			if (N1 > N3) {
+				Segundo = N1;
+				Terceiro = N3;
+			} else {
+				Segundo = N3;
+				Terceiro = N1;
+			}
 		}
 		
-		if (N3 > N1 && N3 > N2 && N1 > N2) {
+		if (N3 > N1 && N3 > N2) {
 			Primeiro = N3;
-			Segundo = N1;
-			Terceiro = N2;
-			System.out.println("\nN3 é o Primeiro.\\nN1 é o Segundo.\\nN2 é o Terceiro");
+			if (N1 > N2) {
+				Segundo = N1;
+				Terceiro = N2;
+			} else {
+				Segundo = N2;
+				Terceiro = N1;
+			}
 		}
-		
-		// System.out.println("O maio número é: " + N1 + "\nSegundo maior é: " + N2 +
-		// "\nTerceiro Maior é: " + N3);
-
+		System.out.println("Os número em ordem crescente é: " + Primeiro + Segundo + Terceiro);
 	}
 }
