@@ -42,7 +42,7 @@ public class Exercicio4While {
 		System.out.println("\nO número de pessoas calmas é: " + dados[0]);
 		System.out.println("O número de mulheres calmas é: " + dados[1]);
 		System.out.println("O número de homens agressivos é: " + dados[2]);
-		System.out.println("O número de pessoas com sexo" + " outros" + " e calmas é: " + dados[3]);
+		System.out.println("O número de pessoas com sexo 'outros' e calmas é: " + dados[3]);
 		System.out.println("O número de pessoas nervosas com mais de 40 anos é: " + dados[4]);
 		System.out.println("O número de pessoas com menos de 18 anos é: " + dados[5]);
 	}
