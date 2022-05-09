@@ -1,4 +1,4 @@
 /.metadata/
-.class
-.project
-.gitignore
+*.class
+*.project
+*.gitignore
