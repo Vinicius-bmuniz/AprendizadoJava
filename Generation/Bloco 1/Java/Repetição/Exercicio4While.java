@@ -9,7 +9,7 @@ public class Exercicio4While {
 		int contador = 0, idade, sexo, personalidade;
 		int dados[] = new int[6]; // Vetor com 6 indices.
 
-		while (contador < 50) {
+		while (contador < 150) {
 			contador++;
 			idade = alea.nextInt(80) + 1;
 			sexo = alea.nextInt(3) + 1;
@@ -38,7 +38,6 @@ public class Exercicio4While {
 			if (personalidade == 1 && idade < 18) // Contabilizar o número de pessoas calmas com menos de 18 anos
 				dados[5]++;
 		}
-
 		System.out.println("\nO número de pessoas calmas é: " + dados[0]);
 		System.out.println("O número de mulheres calmas é: " + dados[1]);
 		System.out.println("O número de homens agressivos é: " + dados[2]);

@@ -9,8 +9,8 @@ public class Exercicio3 {
 		double saldo, reajuste, saldoreajustado;
 
 		System.out.print("Informe o valor do seu saldo: ");
-		saldo = Double.parseDouble(ler.nextLine()); //verificar o motivo de assim funcionar
-		//saldo = ler.nextDouble(); // e assim não
+		//saldo = Double.parseDouble(ler.nextLine()); //verificar o motivo de assim funcionar - duvida solucionada
+		saldo = ler.nextDouble(); // e assim não
 
 		reajuste = saldo * 0.01;
 		saldoreajustado = reajuste + saldo;

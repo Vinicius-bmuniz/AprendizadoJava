@@ -3,6 +3,9 @@ package ExerciciosIFRN;
 public class Exercicio2 {
 	public static void main(String[] args) {
 
+		
+		double vetor[] = {1,2,3,4,5}; //Maneira de declarar um vetor com valores pré-estabelecidos.
+		
 		double m1[] = new double[4];
 		m1[0] = 7;
 		m1[1] = 8;
