@@ -89,12 +89,21 @@ public class telaCadastro extends JFrame {
 		lblNewLabel_1_1.setBounds(10, 69, 46, 14);
 		contentPane.add(lblNewLabel_1_1);
 		
-		JButton btnNewButton = new JButton("Sair");
-		btnNewButton.setBounds(335, 227, 89, 23);
-		contentPane.add(btnNewButton);
+		JButton btnSair = new JButton("Sair");
+		btnSair.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			System.exit(0);	
+			}
+		});
+		btnSair.setBounds(335, 227, 89, 23);
+		contentPane.add(btnSair);
 		
-		JButton btnNewButton_1 = new JButton("Gravar");
-		btnNewButton_1.setBounds(236, 227, 89, 23);
-		contentPane.add(btnNewButton_1);
+		JButton btnSalvar = new JButton("Salvar");
+		btnSalvar.setBounds(236, 227, 89, 23);
+		contentPane.add(btnSalvar);
+		
+		JButton btnLista = new JButton("Ver todos");
+		btnLista.setBounds(335, 196, 89, 23);
+		contentPane.add(btnLista);
 	}
 }

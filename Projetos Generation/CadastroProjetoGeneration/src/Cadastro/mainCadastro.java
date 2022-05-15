@@ -1,74 +1,87 @@
 package Cadastro;
 
-import java.util.Scanner;
-
 import javax.swing.JOptionPane;
 
 public class mainCadastro {
 	public static void main(String[] args) {
 
-		JOptionPane pane = new JOptionPane();
-		Scanner ler = new Scanner(System.in);
 		CadastroPF pf1 = new CadastroPF();
 		CadastroPJ pj1 = new CadastroPJ();
 
 		int test1 = 0;
-		System.out.println("1 - Pessoa Física \n2 - Pessoa Jurídica");
-		test1 = ler.nextInt();
+
+		test1 = Integer.parseInt(JOptionPane.showInputDialog("1 - Pessoa Fï¿½sica \n2 - Pessoa Jurï¿½dica"));
 
 		while (test1 < 1 || test1 > 2) {
-			System.out.println("1 - Pessoa Física \n2 - Pessoa Jurídica");
-			test1 = ler.nextInt();
-			System.out.println(test1);
+			test1 = Integer.parseInt(JOptionPane.showInputDialog("1 - Pessoa Fï¿½sica \n2 - Pessoa Jurï¿½dica"));
 		}
 
 		if (test1 == 1) {
 			System.out.println("Pessoa Fisica");
-			System.out.println("Digite seu nome: ");
-			String varNome = ler.next();
+			String varNome = JOptionPane.showInputDialog("Digite seu nome: ");
 			pf1.setNome(varNome);
 
-			System.out.println("Digite um telefone: ");
-			int varTel = ler.nextInt();
+			int varTel = Integer.parseInt(JOptionPane.showInputDialog("Digite um telefone: "));
 			pf1.setTelefone(varTel);
 
-			System.out.println("Digite um e-mail: ");
-			String varMail = ler.next();
+			String varMail = JOptionPane.showInputDialog("Digite um e-mail: ");
 			pf1.setEmail(varMail);
 
-			System.out.println("Digite sua região: ");
-			String varReg = ler.next();
+			String varReg = JOptionPane.showInputDialog("Digite sua regiï¿½o: ");
 			pf1.setRegiao(varReg);
 
-			System.out.println("Digite sua renda: ");
-			double varRen = ler.nextDouble();
+			double varRen = Double.parseDouble(JOptionPane.showInputDialog("Digite sua renda: "));
 			pf1.setRenda(varRen);
-			
-			pf1.ValorIrpf();
+
+			int i = JOptionPane.showConfirmDialog(null, "Deseja continuar?");
+
+			if (i == JOptionPane.YES_OPTION) {
+				JOptionPane.showMessageDialog(null,
+						"---- CONFIRME SEUS DADOS -----" + " \nNome: " + pf1.getNome() + "\nTelefone: "
+								+ pf1.getTelefone() + "\nEmail: " + pf1.getEmail() + "\nRegiï¿½o: " + pf1.getRegiao()
+								+ "\nRenda: " + pf1.getRenda());
+				pf1.ValorIrpf();
+			} else if (i == JOptionPane.NO_OPTION) {
+				JOptionPane.showMessageDialog(null, "Por favor reinicie o cadastro");
+
+			} else if (i == JOptionPane.CANCEL_OPTION) {
+				JOptionPane.showMessageDialog(null, "Programa cancelado pelo usuï¿½rio!");
+			}
+
 		}
-			
-		
+
 		if (test1 == 2) {
 			System.out.println("Pessoa Juridica");
-			System.out.println("Digite seu nome fantasia: ");
-			String varNome = ler.next();
+			String varNome = JOptionPane.showInputDialog("Digite seu nome fantasia: ");
 			pj1.setNome(varNome);
 
-			System.out.println("Digite um telefone: ");
-			int varTel = ler.nextInt();
+			int varTel = Integer.parseInt(JOptionPane.showInputDialog("Digite um telefone: "));
 			pj1.setTelefone(varTel);
 
-			System.out.println("Digite um e-mail: ");
-			String varMail = ler.next();
+			String varMail = JOptionPane.showInputDialog("Digite um e-mail: ");
 			pj1.setEmail(varMail);
 
-			System.out.println("Digite sua região: ");
-			String varReg = ler.next();
+			String varReg = JOptionPane.showInputDialog("Digite sua regiï¿½o: ");
 			pj1.setRegiao(varReg);
 
-			System.out.println("Digite sua renda: ");
-			double varRen = ler.nextDouble();
+			double varRen = Double.parseDouble(JOptionPane.showInputDialog("Digite sua renda: "));
 			pj1.setRenda(varRen);
+
+			int n = JOptionPane.showConfirmDialog(null, "Deseja continuar?");
+
+			if (n == JOptionPane.YES_OPTION) {
+				JOptionPane.showMessageDialog(null,
+						"---- CONFIRME SEUS DADOS -----" + " \nNome: " + pj1.getNome() + "\nTelefone: "
+								+ pj1.getTelefone() + "\nEmail: " + pj1.getEmail() + "\nRegiï¿½o: " + pj1.getRegiao()
+								+ "\nRenda: " + pj1.getRenda());
+				pj1.ValorIrpfPJ();
+			} else if (n == JOptionPane.NO_OPTION) {
+				JOptionPane.showMessageDialog(null, "Por favor reinicie o cadastro");
+
+			} else if (n == JOptionPane.CANCEL_OPTION) {
+				JOptionPane.showMessageDialog(null, "Programa cancelado pelo usuï¿½rio");
+			}
+
 		}
 
 		System.out.println("FIM");
