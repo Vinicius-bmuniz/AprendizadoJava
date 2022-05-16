@@ -20,8 +20,10 @@ public abstract class cadastroMae implements padraoCadastro {
 	}
 
 	public cadastroMae() {
-
+		super();
 	}
+	
+	//Getters and setters
 
 	public double getRenda() {
 		return renda;
@@ -31,7 +33,7 @@ public abstract class cadastroMae implements padraoCadastro {
 		this.renda = renda;
 	}
 
-	public void info() {
+	public void info() { //puxar informações
 		System.out.println(this.getNome());
 		System.out.println(this.getTelefone());
 		System.out.println(this.getEmail());
