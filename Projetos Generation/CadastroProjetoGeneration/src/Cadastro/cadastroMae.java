@@ -7,8 +7,7 @@ public abstract class cadastroMae implements padraoCadastro {
 	private int telefone;
 	private double renda;
 
-	// construtores
-
+	// construtores Polimorfismo de sobrecarga e Padrão
 	public cadastroMae(boolean pessoa, String regiao, String email, String nome, int telefone, double renda) {
 		super();
 		this.pessoa = pessoa;
@@ -23,22 +22,22 @@ public abstract class cadastroMae implements padraoCadastro {
 		super();
 	}
 	
-	//Getters and setters
-
-	public double getRenda() {
-		return renda;
-	}
-
-	public void setRenda(double renda) {
-		this.renda = renda;
-	}
-
+	//Métodos criados
 	public void info() { //puxar informações
 		System.out.println(this.getNome());
 		System.out.println(this.getTelefone());
 		System.out.println(this.getEmail());
 		System.out.println(this.getRegiao());
 		System.out.println(this.pessoa);
+	}
+	
+	//Getters and setters
+	public double getRenda() {
+		return renda;
+	}
+
+	public void setRenda(double renda) {
+		this.renda = renda;
 	}
 
 	public boolean isPessoa() {
@@ -80,23 +79,25 @@ public abstract class cadastroMae implements padraoCadastro {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+	
+	
+	//Polimorfismo Sobrecarregados
 	@Override
 	public void nome() {
-		// TODO Auto-generated method stub
-
 	}
-
+	
 	@Override
 	public void pessoa() {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
 	public void telefone() {
-		// TODO Auto-generated method stub
+	}
 
+	@Override
+	public String toString() {
+		return "cadastroMae [pessoa=" + pessoa + ", regiao=" + regiao + ", email=" + email + ", nome=" + nome
+				+ ", telefone=" + telefone + ", renda=" + renda + "]";
 	}
 
 }
