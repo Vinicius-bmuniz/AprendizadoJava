@@ -17,11 +17,11 @@ public class mainCadastro {
 
 		for (int x = 0; x < 2; x++) {
 			try {
-				while (test1 < 1 || test1 > 2) {
+				while (test1 < 1 || test1 > 2) {//main pt1 --Talita
 					test1 = Integer.parseInt(JOptionPane.showInputDialog("1 - Pessoa Física \n2 - Pessoa Jurídica"));
 				}
 
-				if (test1 == 1) {
+				if (test1 == 1) { 
 					System.out.println("Pessoa Fisica");
 					String varNome = JOptionPane.showInputDialog("Digite seu nome: ");
 					pf1.setNome(varNome);
@@ -63,7 +63,7 @@ public class mainCadastro {
 					}
 				}
 
-				if (test1 == 2) {
+				if (test1 == 2) { //Main pt2 -- Allan
 					System.out.println("Pessoa Juridica");
 					String varNome = JOptionPane.showInputDialog("Digite seu nome fantasia: ");
 					pj1.setNome(varNome);
