@@ -12,6 +12,8 @@ create table db_cadastro_alunos(
     primary key (id)
     );
     
+SELECT MAX(id) FROM db_cadastro_alunos; -- Retorna o valor máximo de ID dentro da tabela selecioanda
+    
 alter table db_cadastro_alunos add nota decimal(6,2); -- Adicionar nova coluna
     
 select * from db_cadastro_alunos; -- Selecionar e mostrar tabela
@@ -28,6 +30,10 @@ update db_cadastro_alunos set nota = 8.9 where id = 7;
 update db_cadastro_alunos set nota = 10 where id = 8;
 
 -- INSERIR OS ALUNOS NO CADASTRO
+insert into db_cadastro_alunos (nome, sexo, ano_escolar, data_nascimento, sala) -- Podemos inserir os dados dessa forma também
+	values 	("Enzo Rodrigues", "M", 4, "2005-03-21", 4),
+			("Fernando Teotico", "M", 6, "2013-03-21", 6);
+
 insert into db_cadastro_alunos (nome, sexo, ano_escolar, data_nascimento, sala)
 	values ("Enzo Rodrigues", "M", 9, "2002-03-21", 4);
 
