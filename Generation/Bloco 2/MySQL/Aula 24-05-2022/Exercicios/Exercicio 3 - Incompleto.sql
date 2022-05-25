@@ -44,8 +44,5 @@ INSERT INTO tb_produtos (nome, valor, peso, validade, categoria_id) VALUES
   SELECT * FROM tb_produtos WHERE valor BETWEEN 5 AND 60;
   SELECT * FROM tb_produtos WHERE nome LIKE "%C%";
   SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_produtos.categorias_id = tb_categorias.id;
-        
-        
-
-        
-        
+  
+  
