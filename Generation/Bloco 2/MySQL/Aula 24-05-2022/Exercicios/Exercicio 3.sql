@@ -43,6 +43,8 @@ INSERT INTO tb_produtos (nome, valor, peso, validade, categoria_id) VALUES
   SELECT * FROM tb_produtos WHERE valor > 50;
   SELECT * FROM tb_produtos WHERE valor BETWEEN 5 AND 60;
   SELECT * FROM tb_produtos WHERE nome LIKE "%C%";
-  SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_produtos.categorias_id = tb_categorias.id;
+  SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_produtos.categoria_id = tb_categorias.id;
+  SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_produtos.categoria_id = tb_categorias.id WHERE tb_categorias.id = 3;
+  SELECT tb_produtos.nome AS Nome, tb_produtos.valor AS Preço, tb_categorias.tipo AS Tipo FROM tb_produtos INNER JOIN tb_categorias ON tb_produtos.categoria_id = tb_categorias.id WHERE tb_categorias.id = 1;
   
   
